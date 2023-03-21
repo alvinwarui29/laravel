@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('user');
+    return view('home');
 });
+Route::view('contact','contact');
+Route::view('user','user');

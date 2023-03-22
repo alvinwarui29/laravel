@@ -1,3 +1,3 @@
 <div>
-    <h1>Header section from components</h1>
+    <h1>{{$title}}</h1>
 </div>

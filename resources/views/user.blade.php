@@ -1,3 +1,5 @@
+<h1>Login page</h1>
+{{$errors}}
 <form action="/" method="POST">
     @csrf
     <input type="text" name="username" placeholder="Enter your name"/><br/><br/>

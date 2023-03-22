@@ -19,6 +19,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about');
 });
+Route::view('user','user');
 // Route::view('contact','contact');
 // Route::view('user','user');
 // Route:: get("user",[Users::class,'index']);

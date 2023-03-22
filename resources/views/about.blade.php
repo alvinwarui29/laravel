@@ -1,2 +1,2 @@
-<h1>Hello to user in About</h1>
-{{URL::current()}}
+<x-header/>
+<h1>About Page</h1>

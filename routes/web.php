@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\userController;
+use App\Http\controllers\users;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +14,32 @@ use App\Http\Controllers\userController;
 |
 */
 
-Route::get('/',function(){
-    return view('user');
-});
 
+Route::post('/',[users::class,'getData']);
+Route::view('login','user');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Route::get('/',function(){
+//     return view('user');
+// });
 // Route::get('/', function () {
 //     return view('home');
 // });

@@ -1,1 +1,0 @@
-<h3>Inner users page</h3>

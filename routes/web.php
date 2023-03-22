@@ -16,7 +16,10 @@ use App\Http\Controllers\userController;
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/about', function () {
+    return view('about');
+});
 // Route::view('contact','contact');
 // Route::view('user','user');
 // Route:: get("user",[Users::class,'index']);
-Route::get('user',[userController::class,'load']);
+// Route::get('user',[userController::class,'load']);

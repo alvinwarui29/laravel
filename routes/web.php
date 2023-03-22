@@ -13,13 +13,17 @@ use App\Http\Controllers\userController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/',function(){
+    return view('user');
 });
-Route::get('/about', function () {
-    return view('about');
-});
-Route::view('user','user');
+
+// Route::get('/', function () {
+//     return view('home');
+// });
+// Route::get('/about', function () {
+//     return view('about');
+// });
+// Route::view('user','user');
 // Route::view('contact','contact');
 // Route::view('user','user');
 // Route:: get("user",[Users::class,'index']);

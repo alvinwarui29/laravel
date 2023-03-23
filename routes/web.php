@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\userController;
-use App\Http\controllers\userAuth;
+use App\Http\controllers\addMember;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,17 +15,18 @@ use App\Http\controllers\userAuth;
 */
 // Route::post('/',[users::class,'getData']);
 // Route::view('login','user');
-Route::view('login','login');
-Route::view('profile','profile');
-Route::post('user',[userAuth::class,'login']);
+// Route::view('login','login');
+// Route::view('profile','profile');
+// Route::post('user',[userAuth::class,'login']);
 
-Route::get('/logout',function(){
-    if(session()->has('username')){
-        session()->pull('username');
-        return redirect('login');
-    }
-});
-
+// Route::get('/logout',function(){
+//     if(session()->has('username')){
+//         session()->pull('username');
+//         return redirect('login');
+//     }
+// });
+Route::view('add','add');
+Route::post('user',[addMember::class,'add']);
 
 
 

@@ -28,7 +28,8 @@ use App\Http\controllers\userList;
 // Route::view('add','add');
 // Route::post('user',[addMember::class,'add']);
 
-Route::get('user',[userList::class,'list']);
+Route::post('user',[userList::class,'list']);
+Route::view('user',"list");
 
 
 

@@ -7,8 +7,11 @@ use App\Models\Member;
 
 class userList extends Controller
 {
-    function list(){
-        $data= Member::all();
-        return view('list',['members'=>$data]);
+    function list(Request $req){
+       $member = new Member;
+       $member->name = $req->name;
+       $member->location= $req->location;
+       $member->save();
+       return redirect("user");
     }
 }

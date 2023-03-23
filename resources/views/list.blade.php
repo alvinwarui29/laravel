@@ -1,16 +1,8 @@
 <h1>Welcome List</h1>
-<table border="1">
-    <tr>
-        <td>id</td>
-        <td>name</td>
-        <td>Location</td>
-    </tr>
-    @foreach($members as $member)
-    <tr>
-        <td>{{$member['id']}} </td>
-        <td>{{$member['name']}}</td>
-        <td>{{$member['location']}}</td>
-    </tr>
-    @endforeach
+<form method="POST" action="user">
+    @csrf
+    <input type="text" name="name"/>
+    <input type="text" name="location"/>
+    <button type="submit">add</button>
 
-</table>
+</form>

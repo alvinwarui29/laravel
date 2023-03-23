@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\userController;
-use App\Http\controllers\addMember;
+use App\Http\controllers\userList;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,9 +25,10 @@ use App\Http\controllers\addMember;
 //         return redirect('login');
 //     }
 // });
-Route::view('add','add');
-Route::post('user',[addMember::class,'add']);
+// Route::view('add','add');
+// Route::post('user',[addMember::class,'add']);
 
+Route::get('user',[userList::class,'list']);
 
 
 

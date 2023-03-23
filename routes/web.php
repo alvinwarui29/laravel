@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\userController;
-use App\Http\controllers\users;
+use App\Http\controllers\userAuth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +13,10 @@ use App\Http\controllers\users;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-
-Route::post('/',[users::class,'getData']);
-Route::view('login','user');
+// Route::post('/',[users::class,'getData']);
+// Route::view('login','user');
+Route::view('login','login');
+Route::post('user',[userAuth::class,'login']);
 
 
 

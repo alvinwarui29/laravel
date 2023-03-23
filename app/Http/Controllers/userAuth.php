@@ -11,7 +11,7 @@ class userAuth extends Controller
         $req->session()->put('username',$data['username']);
         $req->session()->put('password',$data['password']);
         echo session('user');
-       
+       return redirect('profile');
 
     }
 }

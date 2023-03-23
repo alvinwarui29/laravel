@@ -16,6 +16,7 @@ use App\Http\controllers\userAuth;
 // Route::post('/',[users::class,'getData']);
 // Route::view('login','user');
 Route::view('login','login');
+Route::view('profile','profile');
 Route::post('user',[userAuth::class,'login']);
 
 

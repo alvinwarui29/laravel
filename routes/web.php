@@ -19,6 +19,13 @@ Route::view('login','login');
 Route::view('profile','profile');
 Route::post('user',[userAuth::class,'login']);
 
+Route::get('/logout',function(){
+    if(session()->has('username')){
+        session()->pull('username');
+        return redirect('login');
+    }
+});
+
 
 
 
